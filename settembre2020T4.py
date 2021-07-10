@@ -1,14 +1,6 @@
 class stazione():
-    def __init__(self, targa = '', denominazione = '', \
-                 tipo_locomotiva = '', hh = 0, mm = 0, \
-                 num_passeggeri = 0):
-        self.__targa = targa
-        self.__denominazione = denominazione
-        self.__tipo_locomotiva = tipo_locomotiva
-        self.__hh = hh
-        self.__mm = mm
-        self.__num_passeggeri = num_passeggeri
-
+    def __init__(self):
+        pass
 
     def set_targa(self,targa):
         self.__targa=targa
@@ -56,7 +48,7 @@ def main():
     print_elenco(lista_treni)
     lista_ordinata = ordinamento(lista_treni)
     print_elenco(lista_ordinata)
-    print ("numero medio passeggeri " + media(lista_ordinata, 2))
+    print ("numero medio passeggeri %f " % media(lista_ordinata, 2))
 
 def carica(n):
     elenco_treni = []
